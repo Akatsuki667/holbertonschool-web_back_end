@@ -14,3 +14,5 @@ Rewrite the following standard function to use ES6’s arrow syntax of the funct
 ## 3. Parameter defaults
 Condense the internals of the following function to 1 line - without changing the name of each function/variable.
 
+## 4. Rest parameter syntax for functions
+Modify the following function to return the number of arguments passed to it using the rest parameter syntax

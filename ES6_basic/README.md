@@ -16,3 +16,6 @@ Condense the internals of the following function to 1 line - without changing th
 
 ## 4. Rest parameter syntax for functions
 Modify the following function to return the number of arguments passed to it using the rest parameter syntax
+
+## 5. The wonders of spread syntax
+Using spread syntax, concatenate 2 arrays and each character of a string by modifying the function below. Your function body should be one line long.

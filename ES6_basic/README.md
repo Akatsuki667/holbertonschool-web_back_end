@@ -35,3 +35,8 @@ Rewrite `getFullBudgetObject` to use ES6 method properties in the `fullBudget` o
 
 ## 10. For...of Loops
 Rewrite the function `appendToEachArrayValue` to use ES6’s `for...of` operator. And don’t forget that `var` is not ES6-friendly.
+
+## 11. Iterator
+Write a function named `createEmployeesObject` that will receive two arguments:
+    - `departmentName` (String)
+    - `employees` (Array of Strings)

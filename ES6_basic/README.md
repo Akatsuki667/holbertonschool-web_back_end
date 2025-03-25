@@ -40,3 +40,6 @@ Rewrite the function `appendToEachArrayValue` to use ES6’s `for...of` operator
 Write a function named `createEmployeesObject` that will receive two arguments:
     - `departmentName` (String)
     - `employees` (Array of Strings)
+
+## 12. Let's create a report object
+Write a function named `createReportObject` whose parameter, `employeesList`, is the return value of the previous function `createEmployeesObject`.

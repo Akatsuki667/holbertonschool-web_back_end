@@ -27,3 +27,8 @@ Rewrite the return statement to use a template literal so you can the substitute
 Notice how the keys and the variable names are the same?
 Modify the following function’s `budget` object to simply use the object property value shorthand syntax instead.
 
+## 8. No need to create empty objects before adding in properties
+Rewrite the `getBudgetForCurrentYear` function to use ES6 computed property names on the `budget` object.
+
+## 9. ES6 method properties
+Rewrite `getFullBudgetObject` to use ES6 method properties in the `fullBudget` object.

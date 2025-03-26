@@ -57,3 +57,12 @@ Implement a class named `Currency`:
 - Each attribute must be stored in an “underscore” attribute version (ex: name is stored in _name)
 - Implement a getter for each attribute.
 - Override the method named `evacuationWarningMessage` and return the following string `Evacuate slowly the NUMBER_OF_FLOORS floors`
+
+## 7. Airport
+- Implement a class named `Airport`:
+- Constructor attributes:
+    - `name` (String)
+    - `code` (String)
+- Each attribute must be stored in an “underscore” attribute version (ex: `name` is stored in `_name`)
+- The default string description of the class should return the airport `code` (example below).
+

@@ -51,9 +51,9 @@ Implement a class named `Currency`:
 ## 6. Inheritance
 - Import `Building` from `5-building.js`.
 - Implement a class named `SkyHighBuilding` that extends from `Building`:
-    - Constructor attributes:
-        - `sqft` (Number) (must be assigned to the parent class `Building`)
-        - `floors` (Number)
+- Constructor attributes:
+    - `sqft` (Number) (must be assigned to the parent class `Building`)
+    - `floors` (Number)
 - Each attribute must be stored in an “underscore” attribute version (ex: name is stored in _name)
 - Implement a getter for each attribute.
 - Override the method named `evacuationWarningMessage` and return the following string `Evacuate slowly the NUMBER_OF_FLOORS floors`
@@ -65,4 +65,13 @@ Implement a class named `Currency`:
     - `code` (String)
 - Each attribute must be stored in an “underscore” attribute version (ex: `name` is stored in `_name`)
 - The default string description of the class should return the airport `code` (example below).
+
+## 8. Primitive - Holberton Class
+- Implement a class named `HolbertonClass`:
+- Constructor attributes:
+    - `size` (Number)
+    - `location` (String)
+- Each attribute must be stored in an “underscore” attribute version (ex: `name` is stored in `_name`)
+- When the class is cast into a `Number`, it should return the size.
+- When the class is cast into a `String`, it should return the location.
 

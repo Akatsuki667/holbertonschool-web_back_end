@@ -47,3 +47,13 @@ Implement a class named `Currency`:
 - Implement a getter for each attribute.
 - Consider this class as an abstract class. And make sure that any class that extends from it should implement a method named `evacuationWarningMessage`.
     - If a class that extends from it does not have a `evacuationWarningMessage` method, throw an error with the message `Class extending Building must override evacuationWarningMessage`
+
+## 6. Inheritance
+- Import `Building` from `5-building.js`.
+- Implement a class named `SkyHighBuilding` that extends from `Building`:
+    - Constructor attributes:
+        - `sqft` (Number) (must be assigned to the parent class `Building`)
+        - `floors` (Number)
+- Each attribute must be stored in an “underscore” attribute version (ex: name is stored in _name)
+- Implement a getter for each attribute.
+- Override the method named `evacuationWarningMessage` and return the following string `Evacuate slowly the NUMBER_OF_FLOORS floors`

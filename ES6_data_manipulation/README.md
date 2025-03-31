@@ -18,3 +18,8 @@ You must use the `map` function on the array.
 - Create a function `getStudentsByLocation` that returns an array of objects who are located in a specific city.
 - It should accept a list of students (from `getListStudents`) and a `city` (string) as parameters.
 - You must use the `filter` function on the array.
+
+## 3. Reduce
+- Create a function `getStudentIdsSum` that returns the sum of all the student ids.
+- It should accept a list of students (from `getListStudents`) as a parameter.
+- You must use the `reduce` function on the array.

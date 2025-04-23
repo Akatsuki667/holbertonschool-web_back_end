@@ -9,3 +9,5 @@ Write a type-annotated function `concat` that takes a string `str1` and a string
 ## 2. Basic annotations - floor
 Write a type-annotated function `floor` which takes a float `n` as argument and returns the floor of the float.
 
+## 3. Basic annotations - to string
+Write a type-annotated function `to_str` that takes a float `n` as argument and returns the string representation of the float.

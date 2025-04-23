@@ -21,3 +21,6 @@ Write a type-annotated function `to_str` that takes a float `n` as argument and 
 
 ## 5. Complex types - list of floats
 Write a type-annotated function `sum_list` which takes a list `input_list` of floats as argument and returns their sum as a float.
+
+## 6. Complex types - mixed list
+- Write a type-annotated function `sum_mixed_list` which takes a list `mxd_lst` of integers and floats and returns their sum as a float.

@@ -1,10 +1,10 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
 Module fonction somme élément d'une liste
 """
 
+from typing import List
 
-from typing import  List
 
 def sum_list(input_list: List[float]) -> float:
     """

@@ -1,10 +1,10 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
 Module fonction de somme d'éléments mixte d'une liste
 """
 
-
 from typing import Union
+
 
 def sum_mixed_list(mxd_lst: Union[int, float]) -> float:
     """

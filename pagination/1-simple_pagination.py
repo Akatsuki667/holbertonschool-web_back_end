@@ -57,6 +57,25 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
+        """
+        Récupère une page spécifique du dataset.
+
+        Args:
+            page (int, optionnel): Le numéro de la page à récupérer (indexé à partir de 1).
+            Par défaut, la première page.
+            page_size (int, optionnel): Le nombre d'éléments par page.
+            Par défaut, 10 éléments.
+
+        Returns:
+        List[List]: Une liste contenant les éléments de la page demandée.
+        Retourne une liste vide si:
+        - Le dataset est vide
+        - La page demandée est hors limites
+
+        Raises:
+            AssertionError: Si page n'est pas un entier positif
+            Si page_size n'est pas un entier positif
+        """
         assert isinstance(page, int) and page > 0
         assert isinstance(page_size, int) and page_size > 0
 

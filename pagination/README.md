@@ -12,3 +12,13 @@
     - Use `assert` to verify that both arguments are integers greater than 0.
     - Use `index_range` to find the correct indexes to paginate the dataset correctly and return the appropriate page of the dataset (i.e. the correct list of rows).
     - If the input arguments are out of range for the dataset, an empty list should be returned.
+
+## 2. Hypermedia pagination
+- Implement a `get_hyper` method that takes the same arguments (and defaults) as `get_page` and returns a dictionary containing the following key-value pairs:q
+    - `page_size`: the length of the returned dataset page
+    - `page`: the current page number
+    - `data`: the dataset page (equivalent to return from previous task)
+    - `next_page`: number of the next page, None if no next page
+    - `prev_page`: number of the previous page, None if no previous page
+    - `total_pages`: the total number of pages in the dataset as an integer
+    

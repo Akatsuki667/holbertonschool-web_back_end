@@ -1,4 +1,4 @@
 //
-db.school.drop({
+db.school.deleteMany({
   name: "Holberton school"
 })

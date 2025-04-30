@@ -36,6 +36,7 @@ def index_range(page: int, page_size: int) -> Tuple[int, int]:
     end_idx = (page * page_size)
     return (start_idx, end_idx)
 
+
 class Server:
     """Server class to paginate a database of popular baby names.
     """
@@ -60,10 +61,10 @@ class Server:
         Récupère une page spécifique du dataset.
 
         Args:
-            page (int, optionnel): Le numéro de la page à récupérer (indexé à partir de 1).
-            Par défaut, la première page.
-            page_size (int, optionnel): Le nombre d'éléments par page.
-            Par défaut, 10 éléments.
+        page (int, optionnel): Le numéro de la page à récupérer.
+        Par défaut, la première page.
+        page_size (int, optionnel): Le nombre d'éléments par page.
+        Par défaut, 10 éléments.
 
         Returns:
         List[List]: Une liste contenant les éléments de la page demandée.
@@ -82,7 +83,7 @@ class Server:
 
         if not dataset:
             return []
-        
+
         #  Calcul indices de début et de fin pour la page demandée
         start_index, end_index = index_range(page, page_size)
         if start_index >= len(dataset):
@@ -95,7 +96,7 @@ class Server:
         Récupère une page spécifique avec métadonnées hypermedia.
 
         Args:
-        page (int, optionnel): Le numéro de la page à récupérer (indexé à partir de 1).
+        page (int, optionnel): Le numéro de la page à récupérer.
         Par défaut, la première page.
         page_size (int, optionnel): Le nombre d'éléments par page.
         Par défaut, 10 éléments.

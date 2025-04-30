@@ -1,0 +1,4 @@
+//
+db.school.drop({
+  name: "Holberton school"
+})

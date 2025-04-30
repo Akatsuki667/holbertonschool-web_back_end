@@ -96,6 +96,22 @@ All of your functions must be exported
 - How to type-annotate generators
 
 # Pagination
+
+## Learning Objectives
 - How to paginate a dataset with simple page and page_size parameters
 - How to paginate a dataset with hypermedia metadata
 - How to paginate in a deletion-resilient manner
+
+
+# NoSQL
+
+## Learning Objectives
+- What NoSQL means
+- What is difference between SQL and NoSQL
+- What is ACID
+- What is a document storage
+- What are NoSQL types
+- What are benefits of a NoSQL database
+- How to query information from a NoSQL database
+- How to insert/update/delete information from a NoSQL database
+- How to use MongoDB

@@ -8,5 +8,5 @@ process.stdin.on('data', (data) => {
   const name = data.trim(); // Supprime retours à la ligne
   console.log('Your name is : ', name);
   console.log('This important software is now closing\n');
-  process.exit() // Quitter le programme
-})
+  process.exit(); // Quitter le programme
+});

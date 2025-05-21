@@ -1,12 +1,12 @@
-// Mode "flowing"
-process.stdin.setEncoding('utf8');
+process.stdout.write('Welcome to Holberton School, what is your name?\n');
 
-console.log('Welcome to Holberton School, what is your name?');
+process.stdin.on('readable', () => {
+  const prénom = process.stdin.read();
+  if (prénom) {
+    process.stdout.write(`Your name is: ${prénom}`);
+  }
+});
 
-// Écouter l'événement
-process.stdin.on('data', (data) => {
-  const name = data.trim(); // Supprime retours à la ligne
-  console.log('Your name is : ', name);
-  console.log('This important software is now closing\n');
-  process.exit(); // Quitter le programme
+process.stdin.on('end', () => {
+  process.stdout.write('This important software is now closing\n');
 });

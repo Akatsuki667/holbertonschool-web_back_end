@@ -3,7 +3,7 @@ const http = require('http');
 // Créer serveur HTTP
 const app = http.createServer((req, res) => {
   res.setHeader('Content-Type', 'text/plain');
-  res.write('Hello Holberton School!')
+  res.write('Hello Holberton School!');
   res.end();
 });
 

@@ -1,9 +1,9 @@
 process.stdout.write('Welcome to Holberton School, what is your name?\n');
 
 process.stdin.on('readable', () => {
-  const prénom = process.stdin.read();
-  if (prénom) {
-    process.stdout.write(`Your name is: ${prénom}`);
+  const name = process.stdin.read();
+  if (name) {
+    process.stdout.write(`Your name is: ${name}`);
   }
 });
 

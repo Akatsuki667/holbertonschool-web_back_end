@@ -1,14 +1,14 @@
-const fs = require('fs');
+const fs = require('fs').promises;
 
-function countStudents(path) {
+async function countStudents(path) {
   try {
-    // Lecture synchrone du fichier
-    const fileContent = fs.readFileSync(path, 'utf8');
+    // Lecture asynchrone fichier
+    const file = await fs.readFile(path, 'utf8');
 
-    // Diviser le contenu en lignes
-    const lines = fileContent.split('\n');
+    // Division contenu en ligne
+    const lines = file.split('\n');
 
-    // Vérifier s'il y a des données
+    // Vérifier si il y a des données
     if (lines.length <= 1) {
       console.log('No students found');
       return;
@@ -17,26 +17,26 @@ function countStudents(path) {
     // Extraire l'en-tête
     const headers = lines[0].split(',');
 
-    // Trouver les indices des colonnes importantes
+    // Trouver les indices colonnes
     const firstNameIndex = headers.findIndex((field) => field === 'firstname');
     const fieldIndex = headers.findIndex((field) => field === 'field');
 
-    // Vérifier que les colonnes nécessaires existent
+    // Vérification colonnes existent
     if (firstNameIndex === -1 || fieldIndex === -1) {
       throw new Error('Missing required columns in the database');
     }
 
-    // Traiter les données des étudiants
+    // Initialisation tableau étudiants
     const students = [];
-
+    // Parcourir  lignes de données
     for (let i = 1; i < lines.length; i += 1) {
       // Suppression espaces
       const line = lines[i].trim();
-      // Ignorer les lignes vides
+      // Ignorer lignes vides
       if (line !== '') {
         const values = line.split(',');
 
-        // Vérifier que la ligne a le bon nombre de colonnes
+        // Vérification ligne a le bon nb de colonnes
         if (values.length === headers.length) {
           const student = {
             firstName: values[firstNameIndex],
@@ -48,7 +48,7 @@ function countStudents(path) {
       }
     }
 
-    // Afficher le nombre total d'étudiants
+    // Afficher total étudiants
     console.log(`Number of students: ${students.length}`);
 
     // Regrouper les étudiants par champ d'étude
